@@ -8,7 +8,7 @@ app = FastAPI()
 
 
 @app.get("/")
-def read_root(a: decider.Hand) -> bool | None:
+def read_root() -> bool | None:
     return {"status": "ok"}
 
 
